@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 ${changeHtml}
               </div>
               <div class="bar-area">
-                <div class="bar" style="width: ${percentage}%;"></div>
+                <div class="bar" style="width: 0%;" data-target="${percentage}"></div>
                 <span class="percentage">${percentage}%</span>
               </div>
             `;
@@ -45,8 +45,18 @@ document.addEventListener("DOMContentLoaded", function() {
             `;
             
             tbody.appendChild(tr);
-          }
+          } 
       });
+
+      setTimeout(() => {
+        const bars = document.querySelectorAll('.bar');
+        bars.forEach(bar => {
+          const targetPercentage = bar.getAttribute('data-target');
+          if (targetPercentage) {
+            bar.style.width = targetPercentage + '%';
+          }
+        });
+      }, 100);
     },
    
     error: function(err) {
