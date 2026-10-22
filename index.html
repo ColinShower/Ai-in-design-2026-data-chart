@@ -4,16 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI in Design Report 2026</title>
+  
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <script src="script.js" defer></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>How designers use AI in 2026, and what's changed since 2025</h1>
-
   <div class="report-container">
+    <h1>How designers use AI in 2026, and what's changed since 2025</h1>
 
-    <div id="chartContainer"></div>
+    <canvas id="revenueChart"></canvas>
     
     <p class="source-text">Source: AI in Design survey, Q1 2026</p>
   </div>
@@ -29,6 +31,5 @@
     <tbody>
     </tbody>
   </table>
-  <p>Data from <a href='https://stateofaidesign.com/chapters/tools'>AI in Design 2026</a></p>
 </body>
 </html>
