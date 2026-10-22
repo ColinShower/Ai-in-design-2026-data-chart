@@ -31,22 +31,7 @@ Papa.parse('data.csv', {
         container.appendChild(rowDiv); 
       });
  
-    results.data.forEach(row => {
- 
-      const tr = document.createElement('tr');
-
-      const useCase = row['Use Case'];
-      const change = row['Change since 2025 (pts)'];
-      const percentage = row['2026 Percentage (%)'];
- 
-      tr.innerHTML = `
-        <td>${useCase}</td>
-        <td>${change}</td>
-        <td>${percentage}%</td>
-      `;
- 
-      tbody.appendChild(tr); 
-    });
+    
   },
  
   error: function(err) {
