@@ -33,3 +33,70 @@ tr:nth-child(even) {
 tr:hover {
   background: #eef6ff;
 }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #111;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.report-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #000; /* 标题下方的粗黑线 */
+  padding-bottom: 15px;
+}
+
+.chart-row {
+  margin-bottom: 16px;
+}
+
+.labels {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+
+.use-case {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.change-pts {
+  font-size: 13px;
+  color: #888;
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+.bar-area {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.bar {
+  height: 16px;
+  background-color: #c9a7ff;
+}
+
+.percentage {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.source-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
